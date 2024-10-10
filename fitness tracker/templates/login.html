@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .signin-container {
+      width: 400px; 
+      height: 400px;
+      padding: 40px; 
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .signin-container h2 {
+      text-align: center;
+      margin-bottom: 100px; 
+    }
+    .signin-container label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .signin-container input[type="text"],
+    .signin-container input[type="password"] {
+      width: 100%; 
+      padding: 15px;
+      margin-bottom: 20px; 
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .signin-container input[type="submit"] {
+      width: 100%;
+      padding: 15px; 
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px; 
+    }
+    .signin-container input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="signin-container">
+    <h2>Log In</h2>
+    <form>
+      <label for="Gmail">Gmail</label>
+      <input type="text" id="username" name="username" placeholder="Enter your Gmail">
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password">
+      
+      <input type="submit" value="Sign In">
+    </form>
+  </div>
+</body>
+</html>

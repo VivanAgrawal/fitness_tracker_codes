@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(white 0%, #3ed8fa 100%);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 0 20px;
+            top: 0;
+            width: 97.5%;
+        }
+        .navbar img.logo {
+            height: 55px;
+            width: 55px;
+        }
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown .dropbutton {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: black;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 8px;
+            cursor: pointer;
+        }
+        .navbar a:hover, .dropdown:hover .dropbutton {
+            background-color: lightgrey;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #268add;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .auth-buttons {
+            position: absolute;
+            bottom: 25%;
+            left: 80%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+        }
+        .auth-buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px 85px; 
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .auth-buttons a:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .box, .box1 {
+            display: flex;
+            align-items: center;
+            width: 850px;
+            height: 325px;
+            margin: 10px; 
+            padding: 20px;
+        }
+        .box {
+            background-color: black;
+            color: white;
+        }
+        .box img, .box1 img {
+            width: 450px;
+            height: 300px;
+        }
+        .text, .text1 {
+            text-align: center;
+            width: 50%; 
+            padding: 20px; 
+        }
+        .box1 {
+            background-color: white;
+            color: black;
+        }
+        .logo-text {
+            font-size: 25px;
+            font-weight: bold;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .home_image {
+            position: relative;
+        }
+        
+        .home_text {
+            position: absolute;
+            bottom: 340px;
+            right: 50px;
+            color: white;
+            font-size: 50px;
+            padding: 10px;
+            font-stretch: bold;
+        
+        }
+        .home_text1 {
+            position: absolute;
+            bottom: 290px;
+            right: 60px;
+            color: white;
+            font-size: 32px;
+            padding: 10px;
+        
+        }
+        .home_text2 {
+            position: absolute;
+            bottom: 260px;
+            right: 60px;
+            color: white;
+            font-size: 32px;
+            padding: 10px;
+        
+        }
+        .home_text3 {
+            position: absolute;
+            bottom: 233px;
+            right: 60px;
+            color: white;
+            font-size: 32px;
+            padding: 10px;
+        
+        }
+        .auth-buttons1 {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+        .auth-buttons1 a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .auth-buttons1 a:hover {
+            background-color: lightgrey;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="C:\Users\sumit\OneDrive\Desktop\codding\fitness tracker\logo1.png" class="logo">
+</head>
+<body>
+    
+<div class="navbar">
+    <img class="logo" loading="lazy" src="C:\Users\sumit\OneDrive\Desktop\codding\fitness tracker\logo.jpg" width="35">
+    <div class="logo-text">Fitness Tracker</div>
+
+    <div class="navbar-nav">
+        <div class="dropdown">
+            <button class="dropbutton">Calories</button>
+            <div class="dropdown-content">
+                <a href="calories.html">Calories</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbutton">Health</button>
+            <div class="dropdown-content">
+                <a href="physical.html">Physical</a>
+                <a href="mental.html">Mental</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbutton">Diet</button>
+            <div class="dropdown-content">
+                <a href="diet_plan.html">Diet Plan</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbutton">Records</button>
+            <div class="dropdown-content">
+                <a href="records.html">Records</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="auth-buttons1">
+        <a href="sign_in.html">Sign In</a>
+        <a href="login.html">Login</a>
+    </div>
+</div>
+
+<div class="home_image">
+    <img src="https://mapmy.uastatic.com/3f9066c4c9a186eb76704cf38178b252.webp" alt="Fitness Tracker" width="1520" height="650">
+    <div class="home_text"><b>ACHEIVE THE IMPOSSIBLE</b></div>
+    <div class="home_text1"><b>It's not about being the best</b></div>
+    <div class="home_text2"><b>It's about being better than </b></div>
+    <div class="home_text3"><b> you were yesterday.</b></div>
+    <div class="auth-buttons">
+        <a href="sign_in.html">Sign_in</a>
+        <a href="login.html">Login</a>
+    </div>
+</div>
+
+<h1>WELCOME TO THE FITNESS TRACKER WEBSITE</h1>
+    
+<div class="container">
+    <div class="box">
+        <a href="button1.html">
+            <img src="C:\Users\sumit\OneDrive\Desktop\codding\fitness tracker\sports_img.avif" alt="Sports">
+        </a>
+        <div class="text">
+            <h1>SPORTS</h1>
+            <h2>Your text goes here. This is a sample text to demonstrate the layout. Click here</h2>
+        </div>
+    </div>
+
+    <div class="box1">
+        <div class="text1">
+            <h1>EXERCISE</h1>
+            <h2>Your text goes here. This is a sample text to demonstrate the layout. Click here</h2>
+        </div>
+        <a href="button2.html">
+            <img src="C:\Users\sumit\OneDrive\Desktop\codding\fitness tracker\exercise_img.png" alt="Exercise">
+        </a>
+    </div>
+</div>
+
+<footer>
+    <h1>THANK YOU</h1>
+</footer>
+
+</body>
+</html>

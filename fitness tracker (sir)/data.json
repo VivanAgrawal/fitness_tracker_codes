@@ -1,0 +1,16 @@
+{
+    "workouts": [
+        {
+            "date": "2024-06-25",
+            "type": "running",
+            "duration": 120,
+            "calories": 50
+        },
+        {
+            "date": "2024-07-10",
+            "type": "badmintion",
+            "duration": 290,
+            "calories": 16123
+        }
+    ]
+}
